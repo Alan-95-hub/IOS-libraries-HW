@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,41 @@
 		56F4220A2747BD1400C2F9A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F422092747BD1400C2F9A4 /* ViewController.swift */; };
 		56F4220F2747BD1800C2F9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F4220E2747BD1800C2F9A4 /* Assets.xcassets */; };
 		56F422122747BD1800C2F9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F422102747BD1800C2F9A4 /* LaunchScreen.storyboard */; };
+		56F422D6274968B500C2F9A4 /* MyButton1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F422D52749689D00C2F9A4 /* MyButton1.framework */; };
+		56F422D7274968B500C2F9A4 /* MyButton1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56F422D52749689D00C2F9A4 /* MyButton1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56F422DB27496F8B00C2F9A4 /* MyButton2 in Frameworks */ = {isa = PBXBuildFile; productRef = 56F422DA27496F8B00C2F9A4 /* MyButton2 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56F422BE2748449A00C2F9A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56F4229D2748417600C2F9A4;
+			remoteInfo = MyButton1;
+		};
+		56F422D42749689D00C2F9A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F422D02749689D00C2F9A4 /* MyButton1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56F4229D2748417600C2F9A4;
+			remoteInfo = MyButton1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56F422D8274968B500C2F9A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				56F422D7274968B500C2F9A4 /* MyButton1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		56F422022747BD1400C2F9A4 /* alan_bishaev_HW5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alan_bishaev_HW5.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +56,8 @@
 		56F4220E2747BD1800C2F9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F422112747BD1800C2F9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F422132747BD1800C2F9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyButton1.xcodeproj; path = MyButton1/MyButton1.xcodeproj; sourceTree = "<group>"; };
+		56F422D02749689D00C2F9A4 /* MyButton1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyButton1.xcodeproj; path = ../MyButton1/MyButton1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F422D6274968B500C2F9A4 /* MyButton1.framework in Frameworks */,
+				56F422DB27496F8B00C2F9A4 /* MyButton2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +76,10 @@
 		56F421F92747BD1400C2F9A4 = {
 			isa = PBXGroup;
 			children = (
+				56F422D02749689D00C2F9A4 /* MyButton1.xcodeproj */,
 				56F422042747BD1400C2F9A4 /* alan_bishaev_HW5 */,
 				56F422032747BD1400C2F9A4 /* Products */,
+				56F4225C2748217200C2F9A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +104,30 @@
 			path = alan_bishaev_HW5;
 			sourceTree = "<group>";
 		};
+		56F4225C2748217200C2F9A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56F422BB2748449A00C2F9A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56F422BF2748449A00C2F9A4 /* MyButton1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56F422D12749689D00C2F9A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56F422D52749689D00C2F9A4 /* MyButton1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,12 +138,16 @@
 				56F421FE2747BD1400C2F9A4 /* Sources */,
 				56F421FF2747BD1400C2F9A4 /* Frameworks */,
 				56F422002747BD1400C2F9A4 /* Resources */,
+				56F422D8274968B500C2F9A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = alan_bishaev_HW5;
+			packageProductDependencies = (
+				56F422DA27496F8B00C2F9A4 /* MyButton2 */,
+			);
 			productName = alan_bishaev_HW5;
 			productReference = 56F422022747BD1400C2F9A4 /* alan_bishaev_HW5.app */;
 			productType = "com.apple.product-type.application";
@@ -107,14 +175,44 @@
 				Base,
 			);
 			mainGroup = 56F421F92747BD1400C2F9A4;
+			packageReferences = (
+				56F422D927496F8B00C2F9A4 /* XCRemoteSwiftPackageReference "Package" */,
+			);
 			productRefGroup = 56F422032747BD1400C2F9A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 56F422BB2748449A00C2F9A4 /* Products */;
+					ProjectRef = 56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */;
+				},
+				{
+					ProductGroup = 56F422D12749689D00C2F9A4 /* Products */;
+					ProjectRef = 56F422D02749689D00C2F9A4 /* MyButton1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				56F422012747BD1400C2F9A4 /* alan_bishaev_HW5 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		56F422BF2748449A00C2F9A4 /* MyButton1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyButton1.framework;
+			remoteRef = 56F422BE2748449A00C2F9A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		56F422D52749689D00C2F9A4 /* MyButton1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyButton1.framework;
+			remoteRef = 56F422D42749689D00C2F9A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		56F422002747BD1400C2F9A4 /* Resources */ = {
@@ -329,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56F422D927496F8B00C2F9A4 /* XCRemoteSwiftPackageReference "Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alan-95-hub/Package";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56F422DA27496F8B00C2F9A4 /* MyButton2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56F422D927496F8B00C2F9A4 /* XCRemoteSwiftPackageReference "Package" */;
+			productName = MyButton2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56F421FA2747BD1400C2F9A4 /* Project object */;
 }

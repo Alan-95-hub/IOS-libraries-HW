@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import MyButton1
+import MyButton2
+
 
 class ViewController: UIViewController {
 
@@ -33,6 +36,14 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(log3), for: .touchUpInside)
         return button
     }()
+    lazy var button4: UIButton = {
+        let button=UIButton()
+        button.translatesAutoresizingMaskIntoConstraints=false
+        button.setTitle("logger 4", for: .normal)
+        button.setTitleColor(.red, for: .normal)
+        button.addTarget(self, action: #selector(log4), for: .touchUpInside)
+        return button
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -56,18 +67,28 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
         button3.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         button3.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: 48)])
+        
+        self.view.addSubview(button4)
+        
+        NSLayoutConstraint.activate([
+        button4.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        button4.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: 72)])
     }
     @objc
     func log1() {
-        print("log1")
+        MyButton1.log("hello, world")
     }
     @objc
     func log2() {
-        print("log2")
+        MyButton2.log("hello, world")
     }
     @objc
     func log3() {
         print("log3")
+    }
+    @objc
+    func log4() {
+        print("log4")
     }
 }
 
