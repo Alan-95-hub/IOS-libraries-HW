@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MyButton2",
+        "repositoryURL": "https://github.com/Alan-95-hub/Package",
+        "state": {
+          "branch": "main",
+          "revision": "a0be16d54a607c478d393ad6b3540e3bee81d076",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

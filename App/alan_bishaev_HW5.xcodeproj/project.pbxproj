@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114EA2ECBD6EFDD51AF30477 /* Pods_alan_bishaev_HW5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD98D8B6E4CF7436E8C7D06 /* Pods_alan_bishaev_HW5.framework */; };
 		56F422062747BD1400C2F9A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F422052747BD1400C2F9A4 /* AppDelegate.swift */; };
 		56F422082747BD1400C2F9A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F422072747BD1400C2F9A4 /* SceneDelegate.swift */; };
 		56F4220A2747BD1400C2F9A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F422092747BD1400C2F9A4 /* ViewController.swift */; };
@@ -58,6 +59,9 @@
 		56F422132747BD1800C2F9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyButton1.xcodeproj; path = MyButton1/MyButton1.xcodeproj; sourceTree = "<group>"; };
 		56F422DE274971C800C2F9A4 /* MyButton1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyButton1.xcodeproj; path = ../Libs/MyButton1/MyButton1.xcodeproj; sourceTree = "<group>"; };
+		7DD98D8B6E4CF7436E8C7D06 /* Pods_alan_bishaev_HW5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alan_bishaev_HW5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F996DBCBE1C16E50C7F55BF /* Pods-alan_bishaev_HW5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alan_bishaev_HW5.debug.xcconfig"; path = "Target Support Files/Pods-alan_bishaev_HW5/Pods-alan_bishaev_HW5.debug.xcconfig"; sourceTree = "<group>"; };
+		F3742E86849F911421A47F0C /* Pods-alan_bishaev_HW5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alan_bishaev_HW5.release.xcconfig"; path = "Target Support Files/Pods-alan_bishaev_HW5/Pods-alan_bishaev_HW5.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			files = (
 				56F422E4274971D400C2F9A4 /* MyButton1.framework in Frameworks */,
 				56F422DB27496F8B00C2F9A4 /* MyButton2 in Frameworks */,
+				114EA2ECBD6EFDD51AF30477 /* Pods_alan_bishaev_HW5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,7 @@
 				56F422042747BD1400C2F9A4 /* alan_bishaev_HW5 */,
 				56F422032747BD1400C2F9A4 /* Products */,
 				56F4225C2748217200C2F9A4 /* Frameworks */,
+				7BB042956A3BD001B4D1C2FD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				56F422BA2748449A00C2F9A4 /* MyButton1.xcodeproj */,
+				7DD98D8B6E4CF7436E8C7D06 /* Pods_alan_bishaev_HW5.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +135,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7BB042956A3BD001B4D1C2FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F996DBCBE1C16E50C7F55BF /* Pods-alan_bishaev_HW5.debug.xcconfig */,
+				F3742E86849F911421A47F0C /* Pods-alan_bishaev_HW5.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56F422162747BD1800C2F9A4 /* Build configuration list for PBXNativeTarget "alan_bishaev_HW5" */;
 			buildPhases = (
+				FE5CA3A12C659CED7A717F6D /* [CP] Check Pods Manifest.lock */,
 				56F421FE2747BD1400C2F9A4 /* Sources */,
 				56F421FF2747BD1400C2F9A4 /* Frameworks */,
 				56F422002747BD1400C2F9A4 /* Resources */,
 				56F422D8274968B500C2F9A4 /* Embed Frameworks */,
+				B890376C430C4B2DA44B7AFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +244,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B890376C430C4B2DA44B7AFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alan_bishaev_HW5/Pods-alan_bishaev_HW5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alan_bishaev_HW5/Pods-alan_bishaev_HW5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alan_bishaev_HW5/Pods-alan_bishaev_HW5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE5CA3A12C659CED7A717F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alan_bishaev_HW5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56F421FE2747BD1400C2F9A4 /* Sources */ = {
@@ -369,6 +430,7 @@
 		};
 		56F422172747BD1800C2F9A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F996DBCBE1C16E50C7F55BF /* Pods-alan_bishaev_HW5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -388,6 +450,7 @@
 		};
 		56F422182747BD1800C2F9A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3742E86849F911421A47F0C /* Pods-alan_bishaev_HW5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,16 @@
+PODS:
+  - MyButton3 (0.1.0)
+
+DEPENDENCIES:
+  - MyButton3 (from `../Libs/MyButton3`)
+
+EXTERNAL SOURCES:
+  MyButton3:
+    :path: "../Libs/MyButton3"
+
+SPEC CHECKSUMS:
+  MyButton3: af34a735da1bc26edcf2654449631f5e0b790104
+
+PODFILE CHECKSUM: c3a2ce14b9705c27d4f8632cd251a88d8b311eac
+
+COCOAPODS: 1.10.2

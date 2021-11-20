@@ -1,0 +1,22 @@
+{
+  "name": "MyButton3",
+  "version": "0.1.0",
+  "summary": "A short description of MyButton3.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/azurit78@gmail.com/MyButton3",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "azurit78@gmail.com": "georgefed@yandex-team.ru"
+  },
+  "source": {
+    "git": "https://github.com/azurit78@gmail.com/MyButton3.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MyButton3/Classes/**/*"
+}

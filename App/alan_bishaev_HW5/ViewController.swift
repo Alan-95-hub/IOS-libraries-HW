@@ -8,7 +8,7 @@
 import UIKit
 import MyButton1
 import MyButton2
-
+import MyButton3
 
 class ViewController: UIViewController {
 
@@ -84,7 +84,7 @@ class ViewController: UIViewController {
     }
     @objc
     func log3() {
-        print("log3")
+        MyButton3.log("hello, world")
     }
     @objc
     func log4() {
